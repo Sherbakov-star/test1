@@ -1,0 +1,28 @@
+﻿<Page x:Class="Учет_домашних_финансов.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Учет_домашних_финансов"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="700"
+      Title="Page1">
+
+    <Grid>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="289" Margin="95,10,0,0" VerticalAlignment="Top" Width="523"/>
+        <Button x:Name="_new" Content="Обновить" HorizontalAlignment="Left" Margin="228,318,0,0" VerticalAlignment="Top" Width="92" Height="41" Click="Button_Click_2"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="340,318,0,0" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.5,0.5" Height="40" Click="delete_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.024"/>
+                    <RotateTransform Angle="0.389"/>
+                    <TranslateTransform Y="-0.022"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="dohod" Content="Получить данные о финансах" HorizontalAlignment="Left" Margin="463,319,0,0" VerticalAlignment="Top" Width="199" Height="40" Click="Button_Click"/>
+        <Button x:Name="add" Content="Изменение данных" HorizontalAlignment="Left" Margin="74,318,0,0" VerticalAlignment="Top" Width="132" RenderTransformOrigin="0.303,0.611" Height="40" Click="add_Click"/>
+
+    </Grid>
+</Page>
